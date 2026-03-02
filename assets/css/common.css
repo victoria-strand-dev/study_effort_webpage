@@ -1,14 +1,93 @@
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --background-color: #fff;
+    --primary-color: #001adb;
+    --secondary-color: #2e95cc;
+    --text-color: #303030;
+    --background-color: rgb(235, 242, 255);
+    --navbar-background: rgb(22, 22, 22);
 }
 
-header {
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: var(--navbar-background);
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #f8f8f8;
+    box-shadow: #303030 0px 8px 30px -10px;
+}
+
+.navbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: var(--navbar-background);
+    text-align: center;
+    color: white;
+    box-shadow: #303030 0px 8px 30px -10px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+    .hero-grid{ grid-template-columns: 1fr; }
+    .cards{ grid-template-columns: repeat(2, 1fr); }
+    .news{ grid-template-columns: 1fr; }
+    .two-col{ grid-template-columns: 1fr; }
+    .nav{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(11,18,32,0.95);
+    display: none;
+    flex-direction: column;
+    gap: var(--s-3);
+    padding: var(--s-4);
+    border-radius: 0 0 12px 12px;
+    }
+
+    .nav.open{
+    display:flex;
+    }
+
+    .nav-toggle{
+    display:block;
+    }
+}
+@media (max-width: 520px){
+    .cards{ grid-template-columns: 1fr; }
 }
