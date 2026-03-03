@@ -3,11 +3,17 @@
 }
 
 .hero {
-  min-height: 50vh;          /* 👈 alltid synlig, uavhengig av flex */
-  background-image: url('../img/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  box-shadow: #303030 0px 8px 10px -10px;
+  min-height: 60vh;
+  background: linear-gradient(to bottom, #001adb, #0000aa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .app-links {
