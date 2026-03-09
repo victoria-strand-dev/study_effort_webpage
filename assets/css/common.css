@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #001adb;
+    --primary-color: ;
     --secondary-color: #3e78ff;
     --text-color: #303030;
-    --background-color: rgb(235, 242, 255);
-    --navbar-background: rgb(22, 22, 22);
+    --background-color: #F2F2F2;
+    --navbar-background: #1F2A44;
 }
 
 html, body {

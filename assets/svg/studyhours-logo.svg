@@ -3,8 +3,8 @@
 
 <!--Background circles for the clock face-->
   <circle cx="128" cy="128" r="92" fill="#3e78ff"/>
-  <circle cx="128" cy="128" r="84" fill="#d0fff8"/>
-  <circle cx="128" cy="128" r="76" fill="#ffffff"/>
+  <circle cx="128" cy="128" r="84" fill="#70D4DE"/>
+  <circle cx="128" cy="128" r="76" fill="#F2F2F2"/>
 
 <!--Clock tick marks-->
   <g stroke="#1f2a44" stroke-linecap="round" opacity="0.85">
